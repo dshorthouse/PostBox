@@ -1,3 +1,5 @@
+PostBox was meant to parse Excel files in one of three different formats containing biological checklists into Darwin Core Archive documents. It is no longer under active development.
+
 QUEUE SERVER REQUIREMENTS
 *************************
 
