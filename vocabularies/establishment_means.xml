@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/" 
+	dc:relation="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=4" 
+	dc:title="Establishment Means GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="native" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/native" dc:relation="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=4"
+  dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="native" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term  dc:source="" dc:title="indigenous" xml:lang="en"  />
+   <term  dc:source="" dc:title="reintroduced" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="introduced" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/introduced" dc:relation="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=4"
+  dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="introduced" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term  dc:source="" dc:title="exotic" xml:lang="en" />
+   <term  dc:source="" dc:title="alien" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="naturalised" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised" dc:relation="" dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="naturalised" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="invasive" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive" dc:relation="" dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="invasive" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="managed" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/managed" dc:relation="" dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="managed" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term  dc:source="" dc:title="cultivated" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="uncertain" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/uncertain" dc:relation="" dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="uncertain" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term  dc:source="" dc:title="unknown" xml:lang="en" />
+  </alternative>
+ </concept>
+
+</thesaurus>

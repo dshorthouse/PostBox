@@ -1,0 +1,564 @@
+/* STANDARD COMPONENTS */
+
+body {
+    font-family:Verdana,Arial,sans-serif;
+    background-color:#B0B0B0;
+    margin:0px;
+    padding:0px;
+}
+
+h1 {
+    margin:10px 0px;
+}
+
+h2 {
+ margin:0px;
+ padding:5px 0px 5px 20px;
+ font-size:1.25em;
+}
+
+a:link {
+  color:#009900;
+  text-decoration:none;
+}
+
+a:visited {
+  color:#1E7505;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+  background: #CDC;
+}
+
+/* LAYOUT */
+#wrapper {
+  width:62em;
+  margin:0px auto;
+  background-color:#FFFFFF;
+  -moz-box-shadow: 0 0 30px 2px #999;
+  -webkit-box-shadow: 0 0 30px 2px #999;
+  padding-bottom:20px;
+}
+
+#header {
+ height:130px;
+ border-bottom:3px solid #BDBDBD;
+ position:relative;
+ background-color:#000;
+ background:url(../images/banner.png) no-repeat center top;
+}
+
+#header img {
+  display:none;
+}
+
+#header #site-name {
+  display:none;
+}
+
+#headerImage {
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:250px;
+  height:130px;
+  background-color:#000;
+  background:url(../images/headerImages/rotate.php) no-repeat right top;
+  z-index:10;
+}
+
+#main {
+  min-height:520px;
+}
+
+.main-wrapper {
+}
+
+#sidebar {
+  float:left;
+  width:420px;
+  padding:0px;
+  margin:0px -400px 0px 0px;
+}
+
+#content-wrapper {
+  float:left;
+  width:100%;
+  margin-right:-100%;
+}
+
+#content {
+  padding-left:420px;
+}
+
+#footer {
+}
+
+/* HEADER */
+#header #navbar {
+  background-color:#FFF;
+  opacity:0.9;
+  filter:alpha(opacity=90);
+  -moz-border-radius: 8px 0px 0px 0px;
+  border-top-left-radius:8px 8px;
+  bottom:0px;
+  right:0px;
+  position:absolute;
+  z-index:20;
+  padding:0 0 5px;
+}
+
+#header #navbar ul {
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+  text-transform:uppercase;
+}
+
+#header #navbar ul li {
+  display:inline;
+  font-size: 1.1em;
+  padding: 0 0.5em;
+  margin:0;
+}
+
+#navbar a {
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+}
+
+h2.header {
+/*
+  background: -moz-linear-gradient(0% 100% 90deg, #1E7505, #009900) repeat scroll 0 0 transparent;
+  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#1E7505), to(#009900));
+  margin: 0px;
+  color:#FFF;
+  -moz-border-radius: 8px 8px 0px 0px;
+  border-top-left-radius:8px 8px;
+  border-top-right-radius:8px 8px;
+*/
+
+  background: -moz-linear-gradient(0% 100% 90deg, #1E7505, #009900) repeat scroll 0 0 transparent;
+  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#1E7505), to(#009900));
+  border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0px 0px;
+  border-top-left-radius:8px 8px;
+  border-top-right-radius:8px 8px;
+  color: #FFFFFF;
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 0.8em;
+  margin: 0;
+  padding: 6px 0 6px 10px;
+  text-shadow: 0 1px 3px #959595;
+}
+
+#logo {
+ float:left;
+ margin:0px 8px 0px 0px;
+ padding:0px;
+}
+
+#site-name {
+  margin: 0;
+  padding-top: 13px;
+  text-shadow: 0 1px 3px #959595;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+#intro {
+    font-style:italic;
+    margin:20px;
+    text-align:center;
+}
+
+/* MISC */
+span.subtitle {
+    font-size:0.75em;
+    display:block;
+    margin:0px;
+    padding:0px 10px;
+    font-weight:normal;
+    font-style:italic;
+}
+
+div.section {
+    font-size:0.9em !important;
+    margin:10px;
+}
+
+div.section p, div.section ol, div.section ul {
+  margin:5px;
+}
+
+div.section ul.section-list {
+  padding-left:15px;
+  list-style:none outside none;
+}
+
+/* DOWNLOAD PANEL */
+#download {
+  background-color:#FFFEE7;
+}
+
+#download div.section-content {
+  border-left:1px solid #1E7505;
+  border-right:1px solid #1E7505;
+  border-bottom:1px solid #1E7505;
+  -moz-border-radius: 0px 0px 8px 8px;
+  border-bottom-left-radius:8px 8px;
+  border-bottom-right-radius:8px 8px;
+}
+
+#download .instructions {
+    padding:20px 0px 10px 0px;
+    margin:0px;
+    font-size:0.8em;
+    text-align:center;
+    font-weight:bold;
+}
+
+#download img {
+    margin:10px 0px 0px 30px;
+}
+
+#download ul {
+  list-style-type:none;
+  float:right;
+  margin:10px 25px 0px 0px;
+  padding:0px;
+}
+
+#download ul li span.type {
+    font-weight:bold;
+}
+
+#download ul li span.file {
+    display:block;
+    margin:0 0 0.5em 2em;
+}
+
+#download p.caution {
+    color:#FA2525;
+    text-align:right;
+    font-style:italic;
+    font-size:0.8em;
+}
+
+/* EXTRAS PANEL */
+#extras {
+}
+
+#extras h2 {
+}
+
+/* UPLOAD PANEL */
+
+form input.createinput {
+    width:200px;
+    border:1px solid #006633;
+    font-size:1em;
+}
+
+form ol {
+    list-style:none outside none;
+    margin:0px;
+    padding:0px;
+    margin-top:10px !important;
+}
+
+form ol li {
+    clear:left;
+    margin-bottom:15px;
+}
+
+form ol li label {
+    display:block;
+    float:left;
+    font:100% arial;
+    padding-right:10px;
+    padding-top:0.6em;
+    text-align:right;
+    width:150px;
+    padding:2px 26px 2px 0px;
+    background:none no-repeat scroll 155px center transparent;
+}
+
+form ol li label.synonymy-label { background-image:url('../images/database_table.png'); }
+form ol li label.excel-label { background-image:url('../images/page_white_excel.png'); }
+form ol li label.zip-label { background-image:url('../images/page_white_compressed.png'); }
+form ol li label.email-label { background-image:url('../images/email_attach.png'); }
+form ol li label.gnaclr-label { background-image:url('../images/report_go.png'); }
+form ol li label.mysql-label { background-image:url('../images/database_add.png'); }
+
+form ol li span.description {
+    display:block;
+    font-size:small;
+    margin:0 0 0 180px;
+    font-style:italic;
+}
+
+form li .real-time-validation {
+    display:block;
+    margin:0 0 0 180px;
+    font-size:10px;
+}
+
+form li .real-time-validation span {
+    color:#FFFFFF;
+    font-size:110%;
+    padding:0 2px;
+    text-transform:lowercase;
+}
+        
+form li span.fail {
+  background-color:#FA2525;
+}
+
+input.button {
+  font-size:1em;
+  background: -moz-linear-gradient(0% 100% 90deg, #1E7505, #009900) repeat scroll 0 0 transparent;
+  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#1E7505), to(#009900));
+  border: none;
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-top-left-radius:8px 8px;
+  border-top-right-radius:8px 8px;
+  border-bottom-left-radius:8px 8px;
+  border-bottom-right-radius:8px 8px;
+  color: #FFFFFF;
+  padding: 2px 4px;
+}
+input.button:hover {
+    background: -moz-linear-gradient(0% 100% 90deg, #009900, #1E7505) repeat scroll 0 0 transparent;
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#009900), to(#1E7505));
+}
+            
+span.required {
+    color:#FA2525;
+}
+
+div.submit {
+    margin:20px 0 10px;
+    text-align:center;
+    width:400px;
+}
+
+#results {
+    background-color:#98FB98;
+    padding:10px;
+    margin:0px;
+    display:none;
+    max-height:200px;
+    overflow-y:auto;
+}
+
+#results div.postbox-queue {
+    position:relative;
+    min-height:50px;
+}
+
+#results div.postbox-queue div.postbox-throbber {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:35px;
+    background:transparent url('../images/ajax-loader.gif') no-repeat scroll left center;
+}
+
+#results div.postbox-queue div.postbox-results {
+    padding-left:45px;
+}
+
+#results div.postbox-queue div.postbox-results span.queue-status {
+    display:block;
+    font-size:small;
+    font-style:italic;
+    text-align:right;
+}
+
+p.error { color:#FFFFFF; }
+p.warning { }
+p.notification { }
+
+/* VOCABULARIES PAGE */
+.colmask {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+.doublepage .colleft {
+    right:50%;
+}
+
+.colright, .colmid, .colleft {
+    float:left;
+    position:relative;
+    width:100%;
+}
+
+.doublepage .col1 {
+    left: 52%;
+    width: 46%;
+}
+
+.col1, .col2, .col3 {
+    float: left;
+    overflow: hidden;
+    padding: 0 0 1em;
+    position: relative;
+}
+
+.doublepage .col2 {
+    left: 56%;
+    width: 46%;
+}
+
+.col1, .col2, .col3 {
+    float: left;
+    overflow: hidden;
+    padding: 0 0 1em;
+    position: relative;
+}
+
+#vocabularies .description {
+  margin-bottom:10px;
+  font-size:0.8em;
+  border:1px solid #BDBDBD;
+  padding:5px;
+  width:80%;
+}
+
+#vocabularies .description span {
+	font-weight:bold;
+}
+
+#vocabularies ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#vocabularies ul li {
+    padding:0px;
+    margin:0px;
+}
+
+#vocabularies span.code {
+  margin-right:15px;
+  font-weight:bold;
+  min-width:40px;
+  display:inline-block;
+}
+
+#vocabularies span.term {
+
+}
+
+/* API PAGE */
+#api {
+  padding-left:20px;
+}
+
+#api dl dt {
+    margin-top:20px;
+    font-style:italic;
+}
+
+#api dl dt sup {
+    color:#FA2525;
+}
+
+/* FAQ PAGE */
+#faq {
+    padding-left:20px;
+}
+
+#faq dl {
+    
+}
+
+#faq dl dt {
+ font-weight:bold;
+}
+
+#faq dl dd {
+  margin-bottom:20px;
+}
+
+#faq dl dd img {
+    display:block;
+}
+
+/* ADMIN PAGE */
+#admin-wrapper {}
+
+#failed table {
+  font-size:0.7em;
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table.admin-postbox thead tr {
+    background-color:#CCC;
+    font-weight:bold;
+}
+
+table.admin-postbox thead tr td {
+    text-transform:capitalize;
+    padding:5px;
+    text-align:center;
+}
+
+table.admin-postbox tbody tr.even {
+  background-color:#F0F0F0;
+}
+
+table.admin-postbox tbody tr td.aligned {
+  text-align:center;
+  vertical-align:top;
+}
+
+table.admin-postbox tbody tr td ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+table.admin-postbox tbody tr td ul li {
+    margin:0 0 0 2em;
+    text-indent:-2em;
+}
+
+table.admin-postbox tbody tr td span.ellipsis {
+  width:300px;
+}
+
+table.admin-postbox tbody tr td span.admin-postbox-message-more {
+    font-style:italic;
+}
+
+table.admin-postbox tbody tr td span.admin-postbox-message-less {
+    font-style:italic;
+}
+
+table.admin-postbox tbody tr td a.icon {
+    padding:2px 0px 2px 18px;
+    background:none no-repeat scroll 0px center transparent;
+}
+
+table.admin-postbox tbody tr td a.download { background-image:url('../images/page_white_compressed.png'); }
+table.admin-postbox tbody tr td a.upload_queue { background-image:url('../images/page_white_excel.png'); }
+table.admin-postbox tbody tr td a.failed { background-image:url('../images/page_white_excel.png'); }
+
+.admin-postbox-message {
+    font-style:italic;
+}

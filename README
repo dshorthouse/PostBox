@@ -1,0 +1,58 @@
+QUEUE SERVER REQUIREMENTS
+*************************
+
+PHP 5.3.2
+MySQL 5.1.49
+php-resque (requires Redis)
+
+Required PHP Extensions:
+zip, iconv, mbstring, curl
+
+Required php.ini Settings:
+auto_detect_line_endings = On (required for Excel file uploaded via a Mac)
+max_execution_time = 180 (more the better)
+memory_limit = 256M (more the better)
+
+php-resque:
+http://github.com/chrisboulton/php-resque
+
+Redis:
+http://redis.io/
+Initiated as follows:
+redis-server /opt/local/etc/redis.conf
+
+Configuration Notes:
+1. Adjust Classes/conf/conf.php as required, especially the locations of the various directories
+2. Make the /upload_queue, /download, and /failed directories readable & writable (i.e. chmod 777 upload_queue/, chmod 777 download/, and chmod 777 failed/)
+3. Move run.sh outside of the web directory and adjust the PHP shebang (i.e. #!/opt/local/bin/php) and require_once directives as needed. The latter should have the full path specified.
+4. Make /log/log.txt writable
+5. Ensure that Redis has permission to periodically write to its dbfile as specified in redis.conf
+6. Very large files will require adjustment to php.ini (e.g. post_max_size, upload_max_filesize, memory_limit)
+
+WORKER SERVER REQUIREMENTS
+**************************
+
+PHP 5.3.2
+MySQL 5.1.49
+
+Required PHP Extensions:
+zip, iconv, mbstring, curl
+
+daemontools:
+http://cr.yp.to/daemontools.html
+
+Configuration Notes:
+1. Deploy all code on worker systems
+2. Adjust Classes/conf/conf.php as required. The Queue Server serves the directories /upload_queue, /download, and /failed directories, thus these directories on the worker should be mounted to the Queue Server's directories.
+3. Create a symlink to the bash script in a subfolder in daemontool's /service directory (e.g. /service/postbox) for the /run.sh bash script (On MacPorts, this is /opt/local/var/svscan/service instead). For example, ln -s run.sh run (note, run should not have an extension)
+
+DIRECTLY QUERYING REDIS
+************************
+
+Redis Commands: http://code.google.com/p/redis/wiki/CommandReference
+
+Redis Command Line Interface: ....$redis-cli
+
+1. Jobs: redis> LINDEX resque:queue:postbox 0 [NOTE: jobs are held in a Redis list]
+2. Status: redis> GET resque:job:e924cc2f64dac38d3934a6e8949075e3:status
+3. Messages: redis> GET resque:job:e924cc2f64dac38d3934a6e8949075e3:messageed

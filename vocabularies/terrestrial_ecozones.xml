@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://postbox.biologicalsurvey.ca/vocabularies/terrestrial_ecozones/" 
+	dc:title="Terrestrial Ecozones Vocabulary" 
+	xmlns="http://postbox.biologicalsurvey.ca/vocabularies/"
+	xmlns:dc="http://purl.org/dc/terms/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://postbox.biologicalsurvey.ca/vocabularies/ http://postbox.biologicalsurvey.ca/vocabularies/vocabularies.xsd">
+
+ <concept dc:identifier="nearctic" dc:URI="http://postbox.biologicalsurvey.ca/vocabularies/terrestrial_ecozones/nearctic"
+  dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="nearctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="palearctic" dc:URI="http://postbox.biologicalsurvey.ca/vocabularies/terrestrial_ecozones/palearctic"
+  dc:description="">
+  <preferred>
+   <term  dc:source="" dc:title="palearctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+</thesaurus>
